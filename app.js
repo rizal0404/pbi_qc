@@ -6,8 +6,8 @@ const app = express();
 const PORT = 3000;
 
 // Dummy credentials
-const USERNAME = 'user';
-const PASSWORD = 'password';
+const USERNAME = 'pemakai';
+const PASSWORD = 'pass123#';
 
 // Set up the session
 app.use(session({
