@@ -4,18 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="/styles.css">
   <style>
-    .dashboard-container {
-      width: 100%;
-      height: 100vh;
+    /* Reset default margin and padding */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    /* Set body and html to use full height */
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Dashboard container should take full height minus a small margin */
+    .dashboard-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
     iframe {
       width: 100%;
-      height: 90vh; /* Sesuaikan tinggi sesuai kebutuhan */
+      height: 80vh; /* Adjusts based on available height */
       border: none;
+      margin-bottom: 20px;
+    }
+
+    /* Logout button positioning */
+    .logout-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-decoration: none;
+      color: #333;
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    .logout-button:hover {
+      background-color: #ddd;
     }
   </style>
 </head>
@@ -24,8 +67,7 @@
     <h2>Dashboard Monitoring Mutu</h2>
     <p>Unit Quality Control PT. Semen Tonasa</p>
     <iframe title="monitoring online_pbi" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNzJlNjE3OTMtMzAxNi00NGFhLWE4M2MtNWYyMDE3YzE0NDk0IiwidCI6IjUzYjkyMTJhLTAyMDEtNGZlMS04OTVkLTg1NWRjMjE2MDJjYyIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
-    <br>
-    <a href="/logout">Logout</a>
+    <a href="/logout" class="logout-button">Logout</a>
   </div>
 </body>
 </html>
