@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .fullscreen-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+  <script>
+    // Disable right-click on the entire page
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <iframe class="fullscreen-iframe" src="https://app.powerbi.com/view?r=eyJrIjoiNzJlNjE3OTMtMzAxNi00NGFhLWE4M2MtNWYyMDE3YzE0NDk0IiwidCI6IjUzYjkyMTJhLTAyMDEtNGZlMS04OTVkLTg1NWRjMjE2MDJjYyIsImMiOjEwfQ%3D%3D"></iframe>
+</body>
+</html>
